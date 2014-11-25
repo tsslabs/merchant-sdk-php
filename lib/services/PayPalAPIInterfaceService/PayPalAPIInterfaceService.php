@@ -362,6 +362,8 @@ class AbstractResponseType
 /**
  * Country code associated with this phone number. 
  */
+
+if (!class_exists('PhoneNumberType')) {
 class PhoneNumberType  
    extends PPXmlMessage{
 
@@ -397,12 +399,8 @@ class PhoneNumberType
 	 * @var string 	 
 	 */ 
 	public $Extension;
-
-
-  
- 
 }
-
+}
 
 
 /**
